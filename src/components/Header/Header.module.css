@@ -23,12 +23,12 @@
 }
 
 @media (min-width: 768px) {
-  .nav {
+  .links {
     display: flex;
     gap: 2rem;
   }
 }
-.nav a {
+.links a {
   display: block;
   line-height: 3.2rem;
   text-decoration: none;

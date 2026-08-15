@@ -7,8 +7,8 @@ function App() {
     <>
       <div className={styles.hero}>
         <img className={styles.webTop} src="/img/web.png" alt="Imagen telaraña" />
+        <Header />
         <div className={styles.container}>
-          <Header />
           <Home />
         </div>
         <img className={styles.webBottom} src="/img/web2.png" alt="" />
