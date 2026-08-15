@@ -1,0 +1,26 @@
+:root {
+  --primary: #FF0000;
+  --dark-blue: #1C2336;
+  --gray: #B8BCC6;
+  --black: #0A0A0A;
+  --white: #FFFFFF;
+  --fuentePrincipal:  "Varela Round", sans-serif;
+  --fuente-titulos: "Inter", sans-serif;
+  --funte-subtitulos: "Montserrat", sans-serif;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+*, *:before, *:after {
+    box-sizing: inherit;
+}
+
+body {
+  font-family: var(--fuentePrincipal);
+  color: var(--white);
+  font-size: 2rem;
+  margin: 0;
+}
+
