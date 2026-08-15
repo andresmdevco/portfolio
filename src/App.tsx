@@ -6,8 +6,10 @@ function App() {
   return (
     <>
       <div className={styles.container}>
-        <Header />
-        <Home />
+        <div className={styles.hero}>
+          <Header />
+          <Home />
+        </div>
       </div>
     </>
   );
