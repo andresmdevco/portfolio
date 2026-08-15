@@ -1,3 +1,32 @@
+.webTop {
+  position: absolute;
+  left: 0;
+  opacity: .5;
+}
+
+.webTop img {
+  width: 300px;
+}
+@media (min-width: 768px) {
+  .webTop img{
+    transform: translate(-130px, -50px);
+    width: 700px;
+  }
+}
+@media (min-width: 1400px) {
+  .webTop img{
+    transform: translateY(-90px);
+    width: 700px;
+  }
+}
+@media (min-width: 1920px) {
+  .webTop img{
+    transform: translateY(-60px);
+    width: 700px;
+  }
+}
+
+
 @media (min-width: 768px) {
   .bar {
     display: flex;
@@ -11,7 +40,7 @@
 }
 
 .title {
-  color: var(--gray);
+  color: var(--dark-blue);
   font-size: 2.6rem;
   font-family: var(--subtitlesFont);
   font-style: normal;

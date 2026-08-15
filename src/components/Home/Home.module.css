@@ -1,0 +1,112 @@
+.principal{
+  position: relative;
+  min-height: calc(100vh - 107px);
+  padding-top: 8rem;
+}
+
+
+@media (min-width: 768px) {
+  .principal {
+    padding-top: 16rem;
+  }
+}
+
+.info {
+  color: var(--primary);
+  text-transform: uppercase;
+  font-family: var(--subtitlesFont);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) {
+  .info {
+    font-size: 1.7rem;
+  }
+}
+
+.glitch {
+  margin-top: 0;
+  padding-left: 2rem;
+  color: var(--dark-blue);
+  font-family: var(--subtitlesFont);
+  font-size: 4.5rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-style: italic;
+
+  text-shadow:
+    1px 2px 0 var(--primary),
+    2px 2px 0 var(--primary),
+    3px 3px 0 var(--primary),
+    4px 4px 0 var(--primary),
+    5px 5px 0 var(--primary),
+    6px 6px 0 var(--primary),
+    7px 7px 0 var(--primary);
+}
+
+@media (min-width: 768px) {
+  .glitch {
+    font-size: 7rem;
+  }
+}
+
+.glitch span {
+  display: block;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+}
+
+@media (min-width: 768px) {
+  .links {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+  }
+}
+
+.links a {
+  width: 70%;
+  box-sizing: border-box;
+  font-family: var(--subtitlesFont);
+  font-weight: 700;
+  font-size: 1.8rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: var(--white);
+  border-radius: .8rem;
+  padding: 1.2rem 1.8rem;
+  cursor: pointer;
+}
+
+@media (min-width: 768px) {
+  .links a {
+    width: auto;
+  }
+}
+
+.projects {
+  background-color: var(--primary);
+}
+
+.download {
+  background-color: var(--dark-blue);
+}
+
+.webBottom {
+  position: absolute;
+  bottom: 0;
+  right: calc((min(90vw, 160rem) - 100vw) / 2);
+  opacity: .5;
+}
+
+
+.webBottom img {
+  width: 700px;
+  display: block;
+}
