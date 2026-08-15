@@ -2,19 +2,21 @@ import styles from './Header.module.css';
 
 export default function Header() {
   return (
-    <nav className={styles.nav}>
+    <header>
       <div className={styles.bar}>
-        <a className={styles.title} href=""><span>&lt;Porta</span>folio/&gt;</a>
+        <h1 className={styles.title}>
+          <span>&lt;Porta</span>folio/&gt;
+        </h1>
 
-        <div className={styles.links}>
+        <nav className={styles.nav}>
           <a href="">Inicio</a>
           <a href="">Sobre Mí</a>
           <a href="">Habilidades</a>
           <a href="">Proyectos</a>
           <a href="">Certificados</a>
           <a href="">Contacto</a>
-        </div>
+        </nav>
       </div>
-    </nav>
+    </header>
   );
 }
