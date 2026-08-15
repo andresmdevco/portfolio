@@ -19,10 +19,6 @@ export default function Home() {
             Descargar CV
           </a>
         </div>
-
-        <div className={styles.webBottom}>
-          <img src="/img/web2.png" alt="" />
-        </div>
       </section>
   );
 }

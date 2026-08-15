@@ -5,6 +5,42 @@
 
 .hero {
   min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+}
+
+.webTop {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: .5;
+  width: 350px;
+}
+@media (min-width: 768px) {
+  .webTop {
+    transform: translate(-130px, -50px);
+    width: 700px;
+  }
+}
+@media (min-width: 1400px) {
+  .webTop {
+    transform: translateY(-60px);
+  }
+}
+
+.webBottom {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  opacity: .5;
+  width: 400px;
+}
+@media (min-width: 768px) {
+  .webBottom {
+    transform: translateY(80px);
+    width: 700px;
+  }
+}
+@media (min-width: 1400px) {
+  .webBottom {
+    transform: translateY(0px);
+  }
 }

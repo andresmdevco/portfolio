@@ -1,6 +1,4 @@
 .principal{
-  position: relative;
-  flex: 1;
   padding-top: 3rem;
 }
 @media (min-width: 768px) {
@@ -87,15 +85,4 @@
 }
 .download {
   background-color: var(--dark-blue);
-}
-
-.webBottom {
-  position: absolute;
-  bottom: 0;
-  right: calc((min(90vw, 160rem) - 100vw) / 2);
-  opacity: .5;
-}
-.webBottom img {
-  width: 700px;
-  display: block;
 }

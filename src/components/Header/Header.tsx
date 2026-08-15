@@ -3,11 +3,7 @@ import styles from './Header.module.css';
 export default function Header() {
   return (
     <header>
-      <div className={styles.webTop}>
-        <img src="/img/web.png" alt="Imagen telaraña" />
-      </div>
       <div className={styles.bar}>
-        
         <h1 className={styles.title}>
           <span>&lt;Porta</span>folio/&gt;
         </h1>
