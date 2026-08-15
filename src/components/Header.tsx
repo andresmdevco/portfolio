@@ -3,8 +3,8 @@ import styles from './Header.module.css'
 export default function Header() {
   return (
     <header>
-        <div className={styles.contenedor}>
-            <div className={styles.barra}>
+        <div className={styles.container}>
+            <div className={styles.bar}>
                 <h1 className={styles.title}><span>Andrés</span>Muñoz</h1>
                 
                 <nav className={styles.nav}>

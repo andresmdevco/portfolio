@@ -4,9 +4,9 @@
   --gray: #B8BCC6;
   --black: #0A0A0A;
   --white: #FFFFFF;
-  --fuentePrincipal:  "Varela Round", sans-serif;
-  --fuente-titulos: "Inter", sans-serif;
-  --funte-subtitulos: "Montserrat", sans-serif;
+  --mainFont:  "Varela Round", sans-serif;
+  --titlesFont: "Inter", sans-serif;
+  --subtitlesFont: "Montserrat", sans-serif;
 }
 
 html {
@@ -18,7 +18,7 @@ html {
 }
 
 body {
-  font-family: var(--fuentePrincipal);
+  font-family: var(--mainFont);
   color: var(--white);
   font-size: 2rem;
   margin: 0;

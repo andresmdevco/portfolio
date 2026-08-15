@@ -2,21 +2,22 @@
 .title {
     color: var(--gray);
     font-size: 2.6rem;
-    font-family: var(--fuente-subtitulos);
-    font-weight: 700;
+    font-family: var(--subtitlesFont);
+    font-style: normal;
+    font-weight: 800;
     text-transform: uppercase;
 }
 .title span {
     color: var(--primary);
 }
  
-.contenedor {
+.container {
     width: min(90%, 160rem);
     margin: 0 auto;
 }
 
 @media (min-width: 768px) {
-    .barra {
+    .bar {
         display: flex;
         align-items: center;
         justify-content: space-between;
@@ -33,6 +34,5 @@
     text-decoration: none;
     display: block;
     font-size: 2rem;
-    font-family: var(--fuente-subtitulos);
     color: var(--gray);
 }
