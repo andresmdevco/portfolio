@@ -1,21 +1,30 @@
+.nav {
+  width: 100%;
+  padding: 1rem 0;
+}
+
+.bar {
+  max-width: 85%;
+  margin: 0 auto;
+}
+
 @media (min-width: 768px) {
   .bar {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    gap: 4rem;
+    gap: 2rem;
+    padding-left: 15rem;
   }
-}
-.bar {
-  padding: 2rem 0
 }
 
 .title {
   color: var(--dark-blue);
-  font-size: 2.6rem;
+  font-size: 2.4rem;
   font-family: var(--subtitlesFont);
-  font-style: normal;
+  font-style: italic;
   font-weight: 800;
+  text-transform: uppercase;
   text-align: center;
 }
 .title span {
@@ -23,16 +32,19 @@
 }
 
 @media (min-width: 768px) {
-  .nav {
+  .links {
     display: flex;
     gap: 2rem;
   }
 }
-.nav a {
+.links a {
   display: block;
   line-height: 3.2rem;
   text-decoration: none;
   text-align: center;
-  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: var(--subtitlesFont);
+  font-weight: 700;
+  font-size: 1.5rem;
   color: var(--gray);
 }
