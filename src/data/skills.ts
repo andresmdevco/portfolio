@@ -1,97 +1,99 @@
-export const skills = [
+import type { Skill } from "../types";
+
+export const skills: Skill[] = [
   {
     name: 'Javascript',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'TypeScript',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'Python',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'Java',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'React',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'HTML5',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'CSS3',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'Tailwind CSS',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'Bootstrap',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'Node.js',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'Express.js',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'Spring Boot',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'FastAPI',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'PostgreSQL',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'MongoDB',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'Git',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'GitHub',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'GitLab',
     logo: '',
-    category: ''
+    category: '',
   },
   {
     name: 'Vscode',
     logo: '',
-    category: ''
+    category: '',
   },
-]
+];
