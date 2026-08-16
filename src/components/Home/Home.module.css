@@ -1,43 +1,40 @@
 .principal{
-  padding-top: 3rem;
+  margin-top: 3rem;
 }
 @media (min-width: 768px) {
   .principal {
-    padding-top: 16rem;
+    margin-top:23rem;
   }
 }
 
 .info {
-  color: var(--primary);
   text-transform: uppercase;
   font-family: var(--subtitlesFont);
-  font-size: 1.4rem;
-  font-weight: 600;
+}
+
+.infop{
+  color: var(--primary);
+  font-size: 1.2rem;
+  font-weight: 700;
 }
 @media (min-width: 768px) {
-  .info {
-    font-size: 1.7rem;
+  .infop {
+    font-size: 1.5rem;
   }
 }
 
 .glitch {
-  margin-top: 0;
-  padding-left: 2rem;
+  margin: 0;
+  padding-left: .8rem;
+
   color: var(--dark-blue);
-  font-family: var(--subtitlesFont);
   font-size: 4.5rem;
   font-weight: 700;
-  text-transform: uppercase;
   font-style: italic;
 
   text-shadow:
-    1px 2px 0 var(--primary),
-    2px 2px 0 var(--primary),
-    3px 3px 0 var(--primary),
-    4px 4px 0 var(--primary),
-    5px 5px 0 var(--primary),
-    6px 6px 0 var(--primary),
-    7px 7px 0 var(--primary);
+    4px 5px 0 var(--lightRed),
+    7px 8px 0 var(--primary);
 }
 @media (min-width: 768px) {
   .glitch {
@@ -51,38 +48,43 @@
 .links {
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.3rem;
+  margin-top: 3rem;
 }
 @media (min-width: 768px) {
   .links {
     display: flex;
     flex-direction: row;
     gap: 2rem;
+    margin: 0;
   }
 }
 .links a {
-  width: 70%;
   box-sizing: border-box;
   font-family: var(--subtitlesFont);
   font-weight: 700;
-  font-size: 1.8rem;
+  font-size: 1.4rem;
   text-transform: uppercase;
   text-decoration: none;
   text-align: center;
   color: var(--white);
   border-radius: .8rem;
-  padding: 1.2rem 1.8rem;
+  padding: 1.2rem 1rem;
   cursor: pointer;
 }
 @media (min-width: 768px) {
   .links a {
     width: auto;
+    margin-top: 3rem;
+    padding: 1.5rem 3.2rem;
   }
 }
 
 .projects {
+  width: 23rem;
   background-color: var(--primary);
 }
 .download {
+  width: 20rem;
   background-color: var(--dark-blue);
 }

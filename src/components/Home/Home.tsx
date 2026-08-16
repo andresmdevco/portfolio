@@ -4,7 +4,7 @@ export default function Home() {
   return (
       <section className={styles.principal}>
         <div className={styles.info}>
-          <p>Tu amigable vecino ingeniero de software</p>
+          <p className={styles.infop}>Tu amigable vecino ingeniero de software</p>
           <h1 className={styles.glitch}>
             <span>Andrés</span>
             <span>Muñoz</span>
