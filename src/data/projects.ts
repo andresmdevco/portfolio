@@ -19,7 +19,7 @@ export const projects: Project[] = [
   },
   {
     id: 3,
-    name: 'Seguimiento de Pacientes Veterinaria',
+    name: 'Control de Pacientes Veterinarios',
     description: '',
     technologies: [],
     github: '',
@@ -35,7 +35,7 @@ export const projects: Project[] = [
   },
   {
     id: 5,
-    name: 'Contador de Calorias',
+    name: 'Contador de Calorías',
     description: '',
     technologies: [],
     github: '',
