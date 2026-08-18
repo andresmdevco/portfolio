@@ -13,3 +13,11 @@ export type Project = {
   github: string;
   demo: string;
 };
+
+export type Certification = {
+  id: number;
+  name: string;
+  issuer: string;
+  image: string;
+  issueDate: string;
+};

@@ -1,4 +1,6 @@
-export const certifications = [
+import type { Certification } from '../types';
+
+export const certifications: Certification[] = [
   {
     id: 1,
     name: 'Curso de Spring Framework y Spring Boot',
