@@ -1,0 +1,51 @@
+export const certifications = [
+  {
+    id: 1,
+    name: 'Curso de Spring Framework y Spring Boot',
+    issuer: 'códigofacilito',
+    image: '',
+    issueDate: '7 de Julio de 2026',
+  },
+  {
+    id: 2,
+    name: 'JavaScript Moderno: Guía para dominar el lenguaje',
+    issuer: 'Udemy',
+    image: '',
+    issueDate: '6 de Mayo de 2026',
+  },
+  {
+    id: 3,
+    name: 'GIT+GitHub: Todo un sistema de control de versiones de cero',
+    issuer: 'Udemy',
+    image: '',
+    issueDate: '26 de Abril de 2026',
+  },
+  {
+    id: 4,
+    name: 'Inmersión dev Agentes de AI',
+    issuer: 'Alura Latam',
+    image: '',
+    issueDate: '18 de Marzo de 2026',
+  },
+  {
+    id: 5,
+    name: 'Programación Nivel Explorador',
+    issuer: 'Ministerio de Tecnologías de la Información y las Comunicaciones',
+    image: '',
+    issueDate: '5 de Agosto de 2026',
+  },
+  {
+    id: 6,
+    name: 'Aprende a programar con Python',
+    issuer: 'MasterMind',
+    image: '',
+    issueDate: '27 de Abril de 2022',
+  },
+  {
+    id: 7,
+    name: 'AWS Certified Cloud Practitioner',
+    issuer: 'AWS',
+    image: '',
+    issueDate: '10 de Febrero de 2025',
+  },
+];
