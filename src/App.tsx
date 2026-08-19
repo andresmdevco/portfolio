@@ -5,14 +5,17 @@ import Home from './components/Home/Home';
 function App() {
   return (
     <>
-      <div className={styles.hero}>
-        <img className={styles.webTop} src="/img/web.png" alt="Imagen telaraña" />
-        <Header />
-        <div className={styles.container}>
-          <Home />
-        </div>
-        <img className={styles.webBottom} src="/img/web2.png" alt="" />
-      </div>
+      <Header />
+      <main>
+        <section className={styles.homeSection}>
+          <img className={styles.spidey} src="/img/spidey.png" alt="" />
+          <div className={styles.webs}>
+            <img className={styles.webTop} src="/img/web.png" alt="Imagen telaraña" />
+            <img className={styles.webBottom} src="/img/web2.png" alt="" />
+          </div>    
+          <Home /> 
+        </section>
+      </main>
     </>
   );
 }
