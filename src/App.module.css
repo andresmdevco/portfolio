@@ -6,9 +6,18 @@
 
 .spidey {
   position: absolute;
-  width: 100%;
   bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 100vh;
+  width: auto;
   z-index: -1;
+}
+@media (min-width: 1400px) {
+  .spidey {
+    height: 120vh;
+    bottom: -100px;
+  }
 }
 
 .webs {
