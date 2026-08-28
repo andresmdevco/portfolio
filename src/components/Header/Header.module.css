@@ -42,6 +42,7 @@
   }
 }
 .links a {
+  position: relative;
   display: block;
   line-height: 3.2rem;
   text-decoration: none;
@@ -51,4 +52,26 @@
   font-weight: 700;
   font-size: 1.5rem;
   color: var(--gray);
+
+  transition: color .25s ease;
 }
+
+.links a::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background: var(--red);
+  transition: width .25s ease;
+}
+
+.links a:hover {
+  color: var(--dark-blue);
+}
+
+.links a:hover::after {
+  width: 100%;
+}
+
