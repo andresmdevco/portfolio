@@ -1,13 +1,26 @@
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import styles from './Header.module.css';
 import { Bars3Icon } from '@heroicons/react/16/solid';
 
 export default function Header() {
   const [nav, setNav] = useState(false);
-  
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setScrolled(window.scrollY > 0);
+    };
+
+    window.addEventListener('scroll', handleScroll);
+
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, []);
+
   return (
     <>
-      <nav className={styles.nav}>
+      <nav className={`${styles.nav} ${scrolled ? styles.navScrolled : ''}`}>
         <div className={styles.bar}>
           <h1 className={styles.title}>
             <span>&lt;Porta</span>folio/&gt;

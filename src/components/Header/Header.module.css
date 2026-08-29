@@ -1,10 +1,14 @@
 .nav {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   padding: 1rem 0;
   z-index: 30;
+
+  transition:
+    background-color .5s ease,
+    padding .5s ease;
 }
 
 .bar {
@@ -134,7 +138,6 @@
   }
 }
 
-
 .linksOpen a:hover {
   color: var(--dark-blue);
 }
@@ -148,4 +151,34 @@
   background-color: rgba(0, 0, 0, .45);
   z-index: 20;
   cursor: pointer;
+}
+
+.navScrolled {
+  background-color: rgba(0, 0, 0, .90);
+  backdrop-filter: blur(8px);
+}
+
+.navScrolled .title {
+  color: var(--white);
+}
+
+.navScrolled .links a:hover {
+  color: var(--white);
+}
+
+.navScrolled .menuButton svg{
+  color: var(--white);
+}
+
+.navScrolled .menuButton svg:hover{
+  color: var(--red);
+}
+
+.navScrolled .linksOpen {
+  background-color: rgba(0, 0, 0, .90);
+  backdrop-filter: blur(8px);
+}
+
+.navScrolled .linksOpen .links a:hover{
+  color: var(--white);
 }

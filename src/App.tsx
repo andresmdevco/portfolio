@@ -5,6 +5,7 @@ import { useGSAP } from '@gsap/react';
 import styles from './App.module.css';
 import Header from './components/Header/Header';
 import Home from './components/Home/Home';
+import About from './components/About/About';
 
 gsap.registerPlugin(useGSAP);
 
@@ -48,7 +49,7 @@ function App() {
     <>
       <Header />
       <main>
-        <section className={styles.homeSection}>
+        <section className={styles.section}>
           <img className={styles.spidey} src="/img/spidey.png" alt="" />
           <div className={styles.webs}>
             <img ref={webTop} className={styles.webTop} src="/img/web.png" alt="Imagen telaraña" />
@@ -57,6 +58,9 @@ function App() {
           <Home />
         </section>
       </main>
+      <section className={styles.section}>
+        <About />
+      </section>
     </>
   );
 }
