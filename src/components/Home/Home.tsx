@@ -4,7 +4,7 @@ import { ArrowDownTrayIcon, RocketLaunchIcon } from '@heroicons/react/16/solid';
 export default function Home() {
   return (
     <div className={styles.principal}>
-      <p className={styles.infop}>Tu amigable vecino ingeniero de software</p>
+      <p className={styles.infop}>Ingeniero de Software | Desarrollador Frontend</p>
       <h1 className={styles.glitch}>
         <span>Andrés</span>
         <span>Muñoz</span>
