@@ -1,10 +1,10 @@
 import { useState } from 'react';
 import styles from './Header.module.css';
-import { Bars3Icon, XMarkIcon } from '@heroicons/react/16/solid';
+import { Bars3Icon } from '@heroicons/react/16/solid';
 
 export default function Header() {
   const [nav, setNav] = useState(false);
-
+  
   return (
     <>
       <nav className={styles.nav}>
@@ -14,11 +14,7 @@ export default function Header() {
           </h1>
 
           <div className={styles.menuButton}>
-            {nav ? (
-              <XMarkIcon onClick={() => setNav(false)} />
-            ) : (
-              <Bars3Icon onClick={() => setNav(true)} />
-            )}
+            {!nav && <Bars3Icon onClick={() => setNav(true)} />}
           </div>
 
           <div className={`${styles.links} ${nav ? styles.linksOpen : ''}`}>
@@ -32,6 +28,7 @@ export default function Header() {
         </div>
       </nav>
 
+      {nav && <div className={styles.overlay} onClick={() => setNav(false)} />}
     </>
   );
 }

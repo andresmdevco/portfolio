@@ -4,7 +4,7 @@
   left: 0;
   width: 100%;
   padding: 1rem 0;
-  z-index: 10;
+  z-index: 30;
 }
 
 .bar {
@@ -13,17 +13,13 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  flex-direction: row-reverse;
 }
 
-@media (min-width: 768px) {
-  .bar {
-    gap: 6rem;
-    max-width: 85%;
-  }
-}
-@media (min-width: 1024px) {
+@media (min-width: 1200px) {
   .bar {
     max-width: 80%;
+    flex-direction: row;
   }
 }
 
@@ -40,11 +36,15 @@
   color: var(--red);
 }
 
-.menuButton svg{
-  color: var(--gray);
-  width: 2.8rem;
-
+.menuButton {
+  position: relative;
+  z-index: 50;
   cursor: pointer;
+}
+
+.menuButton svg{
+  color: var(--dark-blue);
+  width: 2.8rem;
 }
 
 .menuButton svg:hover {
@@ -66,54 +66,86 @@
     display: flex;
     gap: 2rem;
   }
+
+  .links a {
+    position: relative;
+    display: block;
+    line-height: 3.2rem;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: var(--subtitlesFont);
+    font-weight: 700;
+    font-size: 1.5rem;
+    color: var(--gray);
+
+    transition: color .25s ease;
+  }
+
+  .links a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background: var(--red);
+    transition: width .25s ease;
+  }
+
+  .links a:hover {
+    color: var(--dark-blue);
+  }
+
+  .links a:hover::after {
+    width: 100%;
+  }
 }
 
 .linksOpen {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  gap: .2rem;
+  align-items: flex-start;
 
-  position: absolute;
-  top: 100%;
+  position: fixed;
+  top: 0;
   left: 0;
 
-  width: 100%;
-  padding: .5rem 0;
-
-  background: white;
+  width: 60%;
+  max-width: 36rem;
+  height: 100vh;
+  padding: 7rem 2rem 2rem;
+  background-color: var(--white);
 }
 
-.links a {
-  position: relative;
-  display: block;
-  line-height: 3.2rem;
+.linksOpen a {
+  line-height: 2.8rem;
   text-decoration: none;
-  text-align: center;
   text-transform: uppercase;
   font-family: var(--subtitlesFont);
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   color: var(--gray);
-
-  transition: color .25s ease;
+}
+@media (min-width: 1024px) {
+  .linksOpen a {
+    line-height: 3.2rem;
+    font-size: 1.5rem;
+  }
 }
 
-.links a::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  width: 0;
-  height: 2px;
-  background: var(--red);
-  transition: width .25s ease;
-}
 
-.links a:hover {
+.linksOpen a:hover {
   color: var(--dark-blue);
 }
 
-.links a:hover::after {
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
   width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, .45);
+  z-index: 20;
+  cursor: pointer;
 }
