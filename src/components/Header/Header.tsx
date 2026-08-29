@@ -18,6 +18,14 @@ export default function Header() {
     };
   }, []);
 
+  useEffect(() => {
+    document.body.style.overflow = nav ? 'hidden' : '';
+
+    return () => {
+      document.body.style.overflow = '';
+    };
+  }, [nav]);
+
   return (
     <>
       <nav className={`${styles.nav} ${scrolled ? styles.navScrolled : ''}`}>
