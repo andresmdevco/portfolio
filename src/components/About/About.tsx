@@ -1,6 +1,8 @@
 import styles from './About.module.css';
 
 export default function About() {
+  const stack = ['React', 'TypeScript', 'JavaSript', 'TailwindCSS', 'Node.js', 'Express', 'PostgreSQL']
+
   return (
     <div className={styles.about}>
       <div className={styles.content}>
@@ -24,13 +26,9 @@ export default function About() {
         <div className={styles.techStack}>
           <h3>Stack Principal</h3>
           <ul className={styles.techStackList}>
-            <li>React</li>
-            <li>TypeScript</li>
-            <li>JavaSript</li>
-            <li>TailwindCSS</li>
-            <li>Node.js</li>
-            <li>Express</li>
-            <li>PostgreSQL</li>
+            {stack.map((tech) => (
+              <li key={tech}>{tech}</li>
+            ))}
           </ul>
         </div>
       </div>
