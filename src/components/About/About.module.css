@@ -1,57 +1,85 @@
 .about {
   display: flex;
   flex-direction: column-reverse;
-  max-width: 88%;
+  max-width: 85%;
   margin: 0 auto;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  gap: 4.5rem;
 }
-
 @media (min-width: 1024px) {
   .about {
     flex-direction: row;
-    max-width: 92%;
+    max-width: 75%;
+    padding-bottom: 0;
     gap: 8rem;
-    padding-left: 7rem;
-    padding-right: 7rem;
   }
 }
-@media (min-width: 1700px) {
+@media (min-width: 1280px) {
+  .about {
+    padding-top: 12rem;
+    max-width: 85%;
+    min-height: 80rem;
+  }
+}
+@media (min-width: 1440px) {
   .about {
     max-width: 80%;
-    padding-left: 10rem;
-    padding-right: 10rem;
+  }
+}
+@media (min-width: 1720px) {
+  .about {
+    max-width: 70%;
   }
 }
 
 .content {
   display: flex;
   flex-direction: column;
+  gap: 2.2rem;
+  margin-top: 3rem;
 }
-@media (min-width: 768px) {
+@media (min-width: 1024px) {
   .content {
+    margin-top: 0;
     flex: 1;
+    gap: 1.5rem;
+  }
+}
+@media (min-width: 1280px) {
+  .content {
     gap: 2.5rem;
   }
 }
 
-
 .label {
   margin: 0;
   color: var(--primary);
-  font-size: 1.2rem;
+  font-size: 1.5rem;
   font-weight: 700;
   text-transform: uppercase;
   font-family: var(--subtitlesFont);
 }
 @media (min-width: 768px) {
   .label {
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 1024px) {
+  .label {
+    font-size: 1.9rem;
+  }
+}
+@media (min-width: 1440px) {
+  .label {
+    font-size: 2rem;
   }
 }
 
 .title {
   margin: 0;
   color: var(--dark-blue);
-  font-size: 4.5rem;
+  font-size: 3.8rem;
   font-weight: 700;
   font-style: italic;
   font-family: var(--titlesFont);
@@ -62,6 +90,22 @@
 }
 @media (min-width: 768px) {
   .title {
+    font-size: 4.6rem;
+  }
+}
+@media (min-width: 1024px) {
+  .title {
+    font-size: 6rem;
+    padding: 0;
+  }
+}
+@media (min-width: 1280px) {
+  .title {
+    padding: 1rem 0;
+  }
+}
+@media (min-width: 1440px) {
+  .title {
     font-size: 6.5rem;
   }
 }
@@ -69,14 +113,30 @@
 .paragraphs {
   display: flex;
   flex-direction: column;
-  gap: 3rem;
-  margin-top: .6rem;
+  gap: 2rem;
   color: var(--gray-dark);
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   font-weight: 600;
   font-family: var(--mainFont);
   line-height: 2.9rem;
-  margin-right: 4rem;
+  margin-top: .8rem;
+}
+@media (min-width: 768px) {
+  .paragraphs {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1280px) {
+  .paragraphs {
+    margin-top: 1rem;
+  }
+}
+@media (min-width: 1440px) {
+  .paragraphs {
+    margin-right: 4rem;
+    font-size: 1.8rem;
+    gap: 3rem;
+  }
 }
 .paragraphs p {
   margin: 0;
@@ -84,16 +144,64 @@
 
 .techStack h3 {
   display: inline-block;
-  padding-bottom: .4rem;
-  font-size: 1.6rem;
+  padding-bottom: .7rem;
+  font-size: 1.3rem;
   color: var(--blue);
   font-family: var(--subtitlesFont);
   text-transform: uppercase;
-  border-bottom: 3px solid var(--blue);
+  border-bottom: 2px solid var(--blue);
+  margin-bottom: 3rem;
+}
+@media (min-width: 768px) {
+  .techStack h3 {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1024px) {
+  .techStack h3 {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 1440px) {
+  .techStack h3 {
+    font-size: 1.8rem;
+  }
 }
 
 .techStackList {
-  color: var(--black);
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.2rem;
+  padding: 0;
+  margin: 0;
+}
+.techStackList li {
+  background-color: var(--white);
+  transition: background-color 0.3s ease, color 0.3s ease, box-shadow 0.3s ease;
+  list-style-type: none;
+  color: var(--primary);
+  font-size: 1.3rem;
+  font-family: var(--mainFont);
+  font-weight: 600;
+  border: 1px solid rgb(163 21 21 / 0.3);
+  border-radius: 1.2rem;
+  padding: 1rem 2rem;
+  cursor: default;
+}
+@media (min-width: 1024px) {
+  .techStackList li {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 1440px) {
+  .techStackList li {
+    font-size: 1.6rem;
+  }
+}
+.techStackList li:hover {
+  background-color: var(--primary);
+  color: var(--white);
+  box-shadow: 0 8px 20px rgba(163, 21, 21, 0.3);
 }
 
 .image {
@@ -101,13 +209,31 @@
   display: flex;
   justify-content: center;
   align-items: flex-end;
+  min-height: 55rem;
+}
+@media (min-width: 768px) {
+  .image {
+    min-height: 65rem;
+  }
+}
+@media (min-width: 1024px) {
+  .image {
+    max-height: 68rem;
+  }
 }
 .image img {
   width: 100%;
-  max-width: 34rem;
+  max-width: 25rem;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   border: 6px solid var(--primary);
   object-fit: cover;
   padding: 0.7rem;
+  margin-bottom: 10rem;
+}
+@media (min-width: 768px) {
+  .image img {
+    max-width: 34rem;
+    margin-bottom: 0;
+  }
 }

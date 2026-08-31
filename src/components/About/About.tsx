@@ -1,7 +1,15 @@
 import styles from './About.module.css';
 
 export default function About() {
-  const stack = ['React', 'TypeScript', 'JavaSript', 'TailwindCSS', 'Node.js', 'Express', 'PostgreSQL']
+  const stack = [
+    'React',
+    'TypeScript',
+    'JavaScript',
+    'TailwindCSS',
+    'Node.js',
+    'Express',
+    'PostgreSQL',
+  ];
 
   return (
     <div className={styles.about}>

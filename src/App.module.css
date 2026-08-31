@@ -3,12 +3,6 @@
   min-height: 100vh;
   overflow: hidden; 
 }
-.sectionAbout {
-  position: relative;
-  min-height: 100vh;
-  overflow: hidden;
-  padding: 10rem 0;
-}
 
 .spidey {
   position: absolute;
