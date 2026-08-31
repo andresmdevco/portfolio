@@ -50,7 +50,6 @@
 
 .title {
   margin: 0;
-
   color: var(--dark-blue);
   font-size: 4.5rem;
   font-weight: 700;
@@ -59,8 +58,7 @@
   text-transform: uppercase;
   padding: .8rem 0;
 
-  text-shadow: 3px 2px 0 var(--rosa);
-    
+  text-shadow: 3px 2px 0 var(--lightRed);
 }
 @media (min-width: 768px) {
   .title {
@@ -84,8 +82,14 @@
   margin: 0;
 }
 
-.techStack h3{
-  color: var(--black);
+.techStack h3 {
+  display: inline-block;
+  padding-bottom: .4rem;
+  font-size: 1.6rem;
+  color: var(--blue);
+  font-family: var(--subtitlesFont);
+  text-transform: uppercase;
+  border-bottom: 3px solid var(--blue);
 }
 
 .techStackList {
@@ -98,7 +102,7 @@
   justify-content: center;
   align-items: flex-end;
 }
-.image img{
+.image img {
   width: 100%;
   max-width: 34rem;
   aspect-ratio: 1 / 1;
