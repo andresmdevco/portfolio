@@ -58,7 +58,7 @@ function App() {
           <Home />
         </section>
       </main>
-      <section className={styles.section}>
+      <section className={styles.sectionAbout}>
         <About />
       </section>
     </>

@@ -3,22 +3,22 @@
   flex-direction: column-reverse;
   max-width: 88%;
   margin: 0 auto;
-  padding-top: 13rem;
 }
-
 
 @media (min-width: 1024px) {
   .about {
     flex-direction: row;
     max-width: 92%;
     gap: 8rem;
-    padding-left: 10rem;
-    padding-right: 10rem;
+    padding-left: 7rem;
+    padding-right: 7rem;
   }
 }
 @media (min-width: 1700px) {
   .about {
     max-width: 80%;
+    padding-left: 10rem;
+    padding-right: 10rem;
   }
 }
 
