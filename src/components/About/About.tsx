@@ -42,7 +42,9 @@ export default function About() {
       </div>
 
       <div className={styles.image}>
-        <img src="/img/foto.png" alt="Foto de Andrés Muñoz" />
+        <div className={styles.imageFrame}>
+          <img src="/img/foto.png" alt="Foto de Andrés Muñoz" />
+        </div>
       </div>
     </div>
   );

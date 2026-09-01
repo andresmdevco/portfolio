@@ -221,19 +221,39 @@
     max-height: 68rem;
   }
 }
-.image img {
+.imageFrame {
   width: 100%;
   max-width: 25rem;
   aspect-ratio: 1 / 1;
   border-radius: 50%;
   border: 6px solid var(--primary);
-  object-fit: cover;
   padding: 0.7rem;
+  background: var(--white);
   margin-bottom: 10rem;
+
+  transition: transform 0.5s ease, box-shadow 0.5s ease;
 }
 @media (min-width: 768px) {
-  .image img {
+  .imageFrame {
     max-width: 34rem;
     margin-bottom: 0;
   }
+}
+.imageFrame:hover {
+  transform: scale(1.06);
+  box-shadow: 0 0 30px rgba(163, 21, 21, 0.4);
+}
+
+.imageFrame img {
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+
+  filter: grayscale(100%);
+  transition: filter 0.5s ease;
+}
+.imageFrame:hover img {
+  filter: grayscale(0%);
 }
