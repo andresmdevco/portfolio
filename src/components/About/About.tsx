@@ -1,3 +1,6 @@
+import { useRef } from 'react';
+import { useGSAP } from '@gsap/react';
+import gsap from 'gsap';
 import styles from './About.module.css';
 
 export default function About() {
@@ -11,6 +14,21 @@ export default function About() {
     'PostgreSQL',
   ];
 
+  const stackRef = useRef<HTMLUListElement>(null);
+
+  useGSAP(() => {
+    gsap.to(stackRef.current!.children, {
+      boxShadow: '0 0 25px rgba(163, 21, 21, 0.6)',
+      borderColor: 'var(--primary)',
+      duration: 1,
+      ease: 'sine.inOut',
+      stagger: {
+        each: 0.15,
+        repeat: -1,
+        yoyo: true,
+      },
+    });
+  });
   return (
     <div className={styles.about}>
       <div className={styles.content}>
@@ -33,7 +51,7 @@ export default function About() {
 
         <div className={styles.techStack}>
           <h3>Stack Principal</h3>
-          <ul className={styles.techStackList}>
+          <ul ref={stackRef} className={styles.techStackList}>
             {stack.map((tech) => (
               <li key={tech}>{tech}</li>
             ))}
