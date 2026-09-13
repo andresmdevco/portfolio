@@ -60,10 +60,6 @@ function App() {
       </main>
       <section className={styles.section}>
         <About />
-        <div className={styles.spiders}>
-          <img className={styles.spidersLeft} src="/img/spiders.png" alt="" />
-          <img className={styles.spidersRight} src="/img/spiders.png" alt="" />
-        </div>
       </section>
     </>
   );

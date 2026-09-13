@@ -33,6 +33,26 @@
   }
 }
 
+.spiders {
+  position: absolute;
+  inset: 0;
+  z-index: -1;
+}
+.spidersLeft {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 30rem;
+  opacity: .2;
+}
+.spidersRight {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 30rem;
+  opacity: .2;
+}
+
 .content {
   display: flex;
   flex-direction: column;

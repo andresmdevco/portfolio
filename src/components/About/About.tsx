@@ -31,6 +31,10 @@ export default function About() {
   });
   return (
     <div className={styles.about}>
+      <div className={styles.spiders}>
+        <img className={styles.spidersLeft} src="/img/spiders.png" alt="" />
+        <img className={styles.spidersRight} src="/img/spiders.png" alt="" />
+      </div>
       <div className={styles.content}>
         <p className={styles.label}>Sobre Mí</p>
 
