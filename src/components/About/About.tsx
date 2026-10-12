@@ -1,7 +1,10 @@
 import { useRef } from 'react';
 import { useGSAP } from '@gsap/react';
 import gsap from 'gsap';
+import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import styles from './About.module.css';
+
+gsap.registerPlugin(ScrollTrigger);
 
 export default function About() {
   const stack = [
@@ -14,7 +17,10 @@ export default function About() {
     'PostgreSQL',
   ];
 
+  const aboutRef = useRef<HTMLDivElement>(null);
   const stackRef = useRef<HTMLUListElement>(null);
+  const spidersLeftRef = useRef<HTMLImageElement>(null);
+  const spidersRightRef = useRef<HTMLImageElement>(null);
 
   useGSAP(() => {
     gsap.to(stackRef.current!.children, {
@@ -28,12 +34,56 @@ export default function About() {
         yoyo: true,
       },
     });
-  });
+
+    const tl = gsap.timeline({
+      scrollTrigger: {
+        trigger: aboutRef.current,
+        start: 'top 70%',
+      },
+    });
+
+    tl.fromTo(
+      spidersLeftRef.current,
+      { y: -150, opacity: 0 },
+      { y: 0, opacity: 0.2, duration: 1.2, ease: 'bounce.out' }
+    ).fromTo(
+      spidersRightRef.current,
+      { y: -150, opacity: 0 },
+      { y: 0, opacity: 0.2, duration: 1.2, ease: 'bounce.out' },
+      '-=0.9' // arranca casi junto con la izquierda, ligero desfase
+    );
+
+    // Balanceo sutil después de que caigan
+    tl.to(
+      spidersLeftRef.current,
+      {
+        rotation: 4,
+        transformOrigin: 'top center',
+        duration: 3,
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut',
+      },
+      '+=0.1'
+    ).to(
+      spidersRightRef.current,
+      {
+        rotation: -4,
+        transformOrigin: 'top center',
+        duration: 3,
+        repeat: -1,
+        yoyo: true,
+        ease: 'sine.inOut',
+      },
+      '<0.3' // pequeño desfase respecto a la anterior
+    );
+  }, { scope: aboutRef });
+  
   return (
     <div className={styles.about}>
       <div className={styles.spiders}>
-        <img className={styles.spidersLeft} src="/img/spiders.png" alt="" />
-        <img className={styles.spidersRight} src="/img/spiders.png" alt="" />
+        <img ref={spidersLeftRef} className={styles.spidersLeft} src="/img/spiders.png" alt="" />
+        <img ref={spidersRightRef} className={styles.spidersRight} src="/img/spiders.png" alt="" />
       </div>
       <div className={styles.content}>
         <p className={styles.label}>Sobre Mí</p>
