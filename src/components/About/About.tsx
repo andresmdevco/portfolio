@@ -15,6 +15,7 @@ export default function About() {
     'Node.js',
     'Express',
     'PostgreSQL',
+    'MongoDB',
   ];
 
   const aboutRef = useRef<HTMLDivElement>(null);
