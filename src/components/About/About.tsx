@@ -93,14 +93,10 @@ export default function About() {
 
         <div className={styles.paragraphs}>
           <p>
-            ¡Hola! Soy Andrés, soy Ingeniero Electrónico y Especialista en Ingeniería de Software,
-            enfocado en el desarrollo frontend y la construcción de aplicaciones web sólidas y bien
-            pensadas, con experiencia en React, TypeScript y JavaScript.
+            ¡Hola! Soy Andrés, Ingeniero Electrónico y Especialista en Ingeniería de Software, orientado al desarrollo web Full Stack. Tengo experiencia desarrollando aplicaciones web completas, desde la interfaz de usuario hasta la construcción de APIs y el manejo de bases de datos, trabajando principalmente con los stacks PERN y MERN.
           </p>
           <p>
-            Desde el desarrollo full stack de aplicaciones web hasta la aplicación de buenas
-            prácticas de ingeniería de software, disfruto llevar problemas complejos a soluciones
-            simples y bien construidas.
+            Me gusta mantenerme en constante aprendizaje explorando nuevas herramientas y tecnologías que me permitan mejorar la forma en que construyo mis aplicaciones.
           </p>
         </div>
 
